@@ -1,9 +1,9 @@
 #pragma once
 
 #include <iostream>
+#include <memory>
 #include <sstream>
 #include <string>
-#include <memory>
 
 #include "spdlog/sinks/rotating_file_sink.h"
 #include "spdlog/spdlog.h"
@@ -31,12 +31,12 @@ public:
         return *this;
     }
 
-//    MetableLogBase &operator<<(NodeID &id) {
-//        if (IsEnabled()) {
-//            id << ss_;
-//        }
-//        return *this;
-//    }
+    //    MetableLogBase &operator<<(NodeID &id) {
+    //        if (IsEnabled()) {
+    //            id << ss_;
+    //        }
+    //        return *this;
+    //    }
 
 protected:
     std::stringstream ss_;
